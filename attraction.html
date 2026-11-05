@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Brunei</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Discover Brunei<small>A KINGDOM OF WONDERS</small></p>
+        
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+        
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">Discover Brunei</a>
+            <a href="attraction.html">Attractions</a>
+            <a href="plan.html">Plan Your Visit</a>
+            <a href="event.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="Attractions">
+            <h1>Attractions</h1>
+            <p>Explore beautiful places across Brunei’s four districts.</p>
+        </section>
+
+        <section class="grid-gallery">
+            <p><small>DISCOVER PLACES</small></p>
+            <h1>Where Will You Explore?</h1>
+
+            <!--from W3School - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_elements-->
+            <div id="myBtnContainer">
+                <button class="filterBtn active" onclick="filterSelection('all')">All</button>
+                <button class="filterBtn" onclick="filterSelection('BruneiMuara')">Brunei-Muara</button>
+                <button class="filterBtn" onclick="filterSelection('Tutong')">Tutong</button>
+                <button class="filterBtn" onclick="filterSelection('Belait')">Belait</button>
+                <button class="filterBtn" onclick="filterSelection('Temburong')">Temburong</button>
+            </div>
+
+            <div class="flexbox-container">
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/handicraftcentre.jpg" alt="handicraft centre">
+                    <div class="flexbox-caption">
+                        <h3>Brunei Arts and Handicraft Training Centre</h3>
+                        <p>Discover intricate textiles, traditional brocades, and skillfully crafted works that celebrate Brunei’s cultural legacy.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Belait">
+                    <img src="images/teraja-longhouse.jpg" alt="teraja longhouse">
+                    <div class="flexbox-caption">
+                        <h3>Teraja Longhouse</h3>
+                        <p>Beyond the edge of the rainforest lies Teraja, where one roof shelters many stories.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/fishermanhut.jpg" alt="fisherman hut">
+                    <div class="flexbox-caption">
+                        <h3>The Fisherman’s Hut</h3>
+                        <p>The Fisherman’s Hut, located along Pantai Seri Kenangan in Tutong, Brunei, offers a casual, beachside dining experience perfect for seafood enthusiasts.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/kg-ayer-kunyit-7-lodge.jpg" alt="kg ayer kunyit 7 lodge">
+                    <div class="flexbox-caption">
+                        <h3>Kampong Ayer</h3>
+                        <p>Kampong Ayer welcomes you to drift through its historic channels, walk its wooden lanes, and feel the heartbeat of a community that has flourished for over a thousand years.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/pasarnekatutong.jpg" alt="pasarneka tutong">
+                    <div class="flexbox-caption">
+                        <h3>Pasarneka Tutong</h3>
+                        <p>Pasarneka tutong is a treasure trove of bargain worthy handicrafts and local cuisine.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/bruneihistorycentre.jpg" alt="brunei history centre">
+                    <div class="flexbox-caption">
+                        <h3>Brunei History Centre</h3>
+                        <p>Discover Brunei’s heritage through antique artifacts, intricate weaponry, and rare shipwreck treasures that bring the nation’s rich past vividly to life.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Temburong">
+                    <img src="images/peliunan-park.jpg" alt="peliunan park">
+                    <div class="flexbox-caption">
+                        <h3>Peliunan Park</h3>
+                        <p>Camp, fish, ride ATVs, or share laughter over local bites in the heart of nature’s calm. </p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/balai-khazanah.jpg" alt="balai khazanah">
+                    <div class="flexbox-caption">
+                        <h3>Balai Khazanah Islam Sultan Haji Hassanal Bolkiah</h3>
+                        <p>Explore nine galleries housing a vast array of Islamic treasures, from ancient manuscripts to sacred relics.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/masjidjame.jpg" alt="majid jame">
+                    <div class="flexbox-caption">
+                        <h3>Jame’ ‘Asr Hassanil Bolkiah Mosque</h3>
+                        <p>A spectacular tribute to Brunei’s current Sultan, Jame’ ‘Asr Hassanil Bolkiah Mosque impresses with its golden domes</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/malaytechmuseum.jpg" alt="malay tech museum">
+                    <div class="flexbox-caption">
+                        <h3>Malay Technology Museum</h3>
+                        <p>Malay Technology Museum, where traditions, tools, and lifestyles of the nation’s ethnic communities come to life.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/royalregalia.jpg" alt="royal regalia">
+                    <div class="flexbox-caption">
+                        <h3>Royal Regalia Museum</h3>
+                        <p>The Royal Regalia Museum is home to the Sultanate’s heirlooms and regalia.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/soas.jpg" alt="soas">
+                    <div class="flexbox-caption">
+                        <h3>Omar ‘Ali Saifuddien Mosque</h3>
+                        <p>Marvel at the grandeur of Omar ‘Ali Saifuddien Mosque, where golden domes and marble pillars meet serene lagoons in the heart of Brunei’s capital.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/the-empire-country-club.jpg" alt="the empire country club">
+                    <div class="flexbox-caption">
+                        <h3>The Empire Brunei Country Club</h3>
+                        <p>The Empire Hotel & Country Club in Brunei is a prestigious luxury resort set on 445 acres of beachfront overlooking the South China Sea.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/atv-katimahar.jpg" alt="atv katimahar">
+                    <div class="flexbox-caption">
+                        <h3>ATV Katimahar Agri Park</h3>
+                        <p>ATV Katimahar Agri Park offers thrilling off-road adventures through lush plantations, jungles, and a mini zoo featuring everything from ostriches to wild crocodiles.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/taseklama.jpg" alt="tasek lama">
+                    <div class="flexbox-caption">
+                        <h3>Tasek Lama Park</h3>
+                        <p>Just minutes from the heart of Bandar Seri Begawan, Tasek Lama Park is an urban oasis where nature lovers can wander through lush trails, take in a serene waterfall, and discover breathtaking city views.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/jerudong-park-night.jpg" alt="jerudong park night">
+                    <div class="flexbox-caption">
+                        <h3>Jerudong Park</h3>
+                        <p>Brunei’s famous amusement park, and the largest in Borneo</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/gadongnightmarket.jpg" alt="gadong night market">
+                    <div class="flexbox-caption">
+                        <h3>Gadong Night Market</h3>
+                        <p>Brunei’s legendary night market right on the outskirts of Gadong, with some dishes being sold for as low as BND1.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/jinchew.jpg" alt="jin chew">
+                    <div class="flexbox-caption">
+                        <h3>Chop Jing Chew</h3>
+                        <p>Indulge in the ‘Roti Kuning’, a soft, buttery bread made with a recipe handed down through the generations.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card BruneiMuara">
+                    <img src="images/tamukianggeh.jpg" alt="tamu kianggeh">
+                    <div class="flexbox-caption">
+                        <h3>Tamu Kianggeh</h3>
+                        <p>Possibly the best place for a quick, affordable breakfast and a casual morning stroll, absorbing the sights and sounds of a thriving market. Located just along the Kianggeh River.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/ecoponies.jpg" alt="eco ponies">
+                    <div class="flexbox-caption">
+                        <h3>Eco Ponies Garden</h3>
+                        <p>Experience the charm of countryside living at Eco Ponies Garden, a family-run farm in Tutong where fresh harvests transform into memorable dining experiences.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/angkasa-oud.jpg" alt="angkasa oud">
+                    <div class="flexbox-caption">
+                        <h3>Angkasa Oud Agarwood Company</h3>
+                        <p>As its name suggests, Angkasa Oud Agarwood Company is a locally owned company that manufactures using – a dark fragrant resinous wood found in the forests Of Brunei. </p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/bintudoh.jpg" alt="bintudoh">
+                    <div class="flexbox-caption">
+                        <h3>Bintudoh Greenspring Resort</h3>
+                        <p>Once a thriving fruit plantation, Bintudoh Greenspring Resort now blends adventure with rustic charm. </p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/puk-balaban.jpg" alt="puk balaban">
+                    <div class="flexbox-caption">
+                        <h3>Warisan Puk Balaban</h3>
+                        <p>Experience the magic of the night at Warisan Puk Balaban, Tutong’s premier stargazing destination. </p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/tutong-river-brunei.jpg" alt="tutong river brunei">
+                    <div class="flexbox-caption">
+                        <h3>Tutong River</h3>
+                        <p>Set off on a gentle river cruise through Tutong’s mangrove forests and glimpse wildlife in their natural rhythm</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/lamin-kampung.jpg" alt="lamin kampung">
+                    <div class="flexbox-caption">
+                        <h3>Lamin Kampung (Pangkalan Warisan)</h3>
+                        <p>Step inside, create, and reconnect with the cultural heartbeat of Brunei.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Tutong">
+                    <img src="images/tasekmerimbun.jpg" alt="tasek merimbun">
+                    <div class="flexbox-caption">
+                        <h3>Tasek Merimbun Heritage Park</h3>
+                        <p>An ASEAN Heritage site rich in biodiversity, cultural heritage, and picturesque wetlands that offer tranquility and natural beauty.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Belait">
+                    <img src="images/kiri-monument.jpg" alt="kiri monument">
+                    <div class="flexbox-caption">
+                        <h3>Kiri Monument</h3>
+                        <p>Kuala Belait’s Kiri Monument also famously known as the Giant Teapot is one of the district’s most prominent landmarks. </p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Belait">
+                    <img src="images/billionth-barrel.jpg" alt="billionth barrel">
+                    <div class="flexbox-caption">
+                        <h3>Billionth Barrel Monument</h3>
+                        <p>Built in 1991, the Billionth Barrel Monument resides along the beach in Seria and is a symbol of achievement in Brunei’s oil production.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Belait">
+                    <img src="images/seria-ener-lab.jpg" alt="seria ener lab">
+                    <div class="flexbox-caption">
+                        <h3>Seria Energy Lab</h3>
+                        <p>Check out the Seria Energy Lab, a centre where kids can play and learn! </p>
+                    </div>
+                </article>
+                
+                <article class="flexbox-card Belait">
+                    <img src="images/belaitmuseum.jpg" alt="belait museum">
+                    <div class="flexbox-caption">
+                        <h3>Belait District Museum</h3>
+                        <p>Step into history at the Belait District Museum, a former British residence turned cultural landmark, where Brunei’s heritage, local wildlife, and royal memories come to life.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Temburong">
+                    <img src="images/ulu-temburong.jpg" alt="Ulu Temburong Park Bridge">
+                    <div class="flexbox-caption">
+                        <h3>Ulu Temburong National Park</h3>
+                        <p>Immerse yourself in Brunei’s “Green Jewel,” where ancient rainforests teem with vibrant wildlife and breathtaking landscapes await.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Temburong">
+                    <img src="images/sumbiling.jpg" alt="sumbiling">
+                    <div class="flexbox-caption">
+                        <h3>Sumbiling Eco Village</h3>
+                        <p>Experience riverside glamping, local flavors, and the quiet rhythm of life at this peaceful eco retreat.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Temburong">
+                    <img src="images/freme-rainforest.jpg" alt="freme rainforest">
+                    <div class="flexbox-caption">
+                        <h3>Freme Rainforest Lodge & Adventure Park</h3>
+                        <p>From canopy walks and river rides to fireside evenings and waterfall treks, experience Brunei’s wild side in comfort and style.</p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Temburong">
+                    <img src="images/abode-river-cruise.jpg" alt="abode river cruise">
+                    <div class="flexbox-caption">
+                        <h3>Abode River Cruise</h3>
+                        <p>Glide through serene mangrove forests along the Labu River and immerse yourself in Brunei’s rich biodiversity. </p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Temburong">
+                    <img src="images/azbacktonature.jpg" alt="AZ back to nature">
+                    <div class="flexbox-caption">
+                        <h3>AZ Back to Nature</h3>
+                        <p>AZ Back to Nature offers customized, sustainable rainforest adventures in Brunei. </p>
+                    </div>
+                </article>
+
+                <article class="flexbox-card Belait">
+                    <img src="images/mendaram-longhouse.jpg" alt="mendaram longhouse">
+                    <div class="flexbox-caption">
+                        <h3>Mendaram Besar Longhouse</h3>
+                        <p>Experience the hospitality of the Iban indigenous community at this longhouse in Labi. </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Discover Brunei<small>A KINGDOM OF WONDERS</small></p>
+        <p>Explore Brunei's natural beauty, culture, heritage and warm hospitality</p>
+        <h2>Explore</h2>
+        <a href="about.html">Discover Brunei</a>
+        <a href="attraction.html">Attractions</a>
+        <a href="plan.html">Travel Information</a>
+        <br>
+        <h2>More</h2>
+        <a href="event.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.bruneitourism.com/">Official Tourism Website↗</a>
+
+        <hr>
+
+        <p class="copyright">&copy;2026 Discover Brunei . Personal website project . Created by Syahirah</p>
+    </footer>
+</body>
+</html>

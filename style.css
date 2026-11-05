@@ -1,0 +1,998 @@
+body {
+    margin: 0;
+    background-color: #FFF8ED;;
+    color: #37232A;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Small section labels */
+
+section p small {
+    color: #A65D67;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/*header and nav*/
+
+header {
+    background-color:  #390B19;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+header p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header small {
+    display: block;
+    font-size: 10px;
+    font-weight: normal; /*because the rest of the small is bold*/
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: #F5E8D8;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 0;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #F5E8D8;
+    border-bottom-color: #F5E8D8;
+}
+
+/*button*/
+
+.btn {
+    background-color: #800020;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #390B19;
+}
+
+.plan-btn {
+  border-radius: 50px;
+  padding: 8px;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.plan-btn:hover {
+    background-color: #FFFFFF;
+    color: #651126;
+}
+
+.Explorebtn {
+  border-radius: 50px;
+  padding: 8px;
+  border: 2px solid #800020;
+  color: #800020;
+  font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Explorebtn:hover {
+    border: 2px solid #390B19;
+    color: #390B19;
+}
+
+/*banner*/
+.DiscoverBrunei {
+    padding: 100px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 7, 20, 0.90) 0%,
+            rgba(65, 12, 29, 0.65) 45%,
+            rgba(65, 12, 29, 0.10) 100%
+        ),
+        url("images/soas\ banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.DiscoverBrunei p small, .flexbox p small {
+    color: #F5E8D8;
+}
+
+/*grid box*/
+
+.gridbox {
+    background-color: #FFF8ED;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gridbox p {
+    color: #705D61;
+}
+
+.gridbox-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.grid-box {
+    background-color: #FFFCF7;
+    border: 1px solid #E8D3BF;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.grid-box:hover {
+    transform: scale(1.025);
+}
+
+.grid-card h3 {
+    color: #651126;
+}
+
+.grid-card p {
+    color: #705D61;
+}
+
+/*flexbox (featured attraction)*/
+
+.flexbox {
+    /*background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/tenunan_sukmaindera.jpg');*/
+    background-color: #651126;
+    padding: 40px 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.flexbox a {
+    display: block;
+    width: fit-content;
+    margin: 15px 0 0 auto;
+    color: #F5E8D8;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.flexbox a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.flexbox-card {
+    background-color: #FFFCF7;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.flexbox-card:hover {
+    transform: scale(1.025);
+}
+
+.flexbox-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.flexbox-caption {
+    padding: 20px;
+}
+
+.flexbox-caption h3 {
+    color: #651126;
+}
+
+.flexbox-caption p {
+    color: #705D61;
+}
+
+/*intro about brunei*/
+
+.about-brunei {
+    background-color: #F5E8D8;
+    align-content: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-brunei p {
+    color: #705D61;
+}
+
+.about-brunei .btn {
+    width: fit-content;
+}
+
+.caption {
+    padding: 20px;
+}
+
+.about-brunei img {
+    grid-column: 2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(57, 11, 25, 0.10);;
+}
+
+/*footer*/
+
+footer {
+    background-color: #390B19;
+    padding: 20px;
+    font-weight: bold;
+    gap: 1px;
+    color: white;
+}
+
+footer small {
+    display: block;
+    color: #F5E8D8;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+footer h2 {
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #F5E8D8;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+    color: #F5E8D8;
+    font-size: 12px;
+    text-align: center;
+}
+ 
+/*quick facts*/
+
+.gridbox.facts {
+    background-color: #F5E8D8;
+    margin: 0;
+    padding: 10px;
+}
+
+.gridbox.facts .gridbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gridbox.facts .grid-box {
+    flex: 1 1 200px;
+    background-color: #FFFCF7;
+    border: 1px solid #E8D3BF;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+.gridbox.facts h3 {
+    color: #651126;
+}
+
+.gridbox.facts p {
+    color: #705D61;
+}
+
+/map*/
+
+section.district-map {
+    text-align: center;
+}
+
+/*traditional food*/
+
+.flexbox.food{
+    background-color: #FFFCF7;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+.flexbox.food small {
+    color: #A65D67;
+    letter-spacing: 2px;
+}
+
+.flexbox.food h1 {
+    color: #651126;
+}
+
+.flexbox.food p {
+    color: #705D61;
+}
+
+/*the seven puak*/
+
+.puak {
+    text-align: center;
+}
+
+.seven-puak {
+    background-color: #FFF8EE;
+    padding: 20px;
+}
+
+.tab {
+    display: flex;
+    background-color: #F5E8D8;
+    border: 1px solid #D8C7BB;
+    border-radius: 10px 10px 0 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.tab button {
+    flex: 1;
+    min-width: 110px;
+    padding: 10px;
+    background-color: transparent;
+    color: #390B19;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tab button:hover {
+    background-color: #E8C6C9;
+}
+
+.tab button.active {
+    background-color: #651126;
+    color: white;
+}
+
+.tabcontent {
+    display: none;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: #FFFCF7;
+    border: 1px solid #D8C7BB;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    min-height: 400px;
+}
+
+.tabcontent img {
+    width: 50%;
+    height: 350px;
+    object-fit: contain;
+}
+
+
+/*attraction page banner*/
+.Attractions {
+    padding: 100px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 7, 20, 0.90) 0%,
+            rgba(65, 12, 29, 0.65) 45%,
+            rgba(65, 12, 29, 0.10) 100%
+        ),
+        url("images/kampong\ ayer.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+/*attraction page gallery*/
+
+.grid-gallery {
+    text-align: center;
+}
+
+/*filter button - attraction page*/
+
+#myBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.filterBtn {
+    background-color: #FFF8ED;
+    color: #651126;
+    border: 1px solid #E8D3BF;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filterBtn:hover {
+    border-color: #651126;
+}
+
+.filterBtn.active {
+    background-color:#651126;
+    color: white;
+    border-color: #651126;
+}
+
+/*plan page*/
+.Plan-Your-Visit {
+    padding: 100px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 7, 20, 0.90) 0%,
+            rgba(65, 12, 29, 0.65) 45%,
+            rgba(65, 12, 29, 0.10) 100%
+        ),
+        url("images/empire\ landscape.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.before-arrive {
+    background-color: #F5E8D8;
+    text-align: center;
+}
+
+.before-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto 20px;
+}
+
+.before-card {
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.before-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.before-caption {
+    padding: 30px;
+    text-align: left;
+}
+
+.accommodation {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.accommodation img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.accommodation .before-caption {
+    flex: 1;
+    text-align: left;
+}
+
+.before-card a, .accommodation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #390B19;
+}
+
+.before-card a:hover, .accommodation a:hover {
+    color: #A65D67;
+}
+
+
+/*flex - best time to visit*/
+
+.best-time {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #FFF8EE;
+}
+
+.best-text {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.best-img {
+    flex: 1;
+    min-width: 0;
+}
+
+.best-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    display: block;
+}
+
+.practical-tips {
+    background-color: #FFFCF7;
+    padding: 40px;
+}
+
+/*Events & Celebrations*/
+.Events-Celebrations {
+    padding: 100px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 7, 20, 0.90) 0%,
+            rgba(65, 12, 29, 0.65) 45%,
+            rgba(65, 12, 29, 0.10) 100%
+        ),
+        url("images/istana.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.festivals-gallery {
+    text-align: center;
+}
+
+/*events gallery*/
+
+.festivals-gallery small {
+    color: #A65D67;
+    letter-spacing: 2px;;
+}
+
+.festivals-gallery h1 {
+    color: #651126;
+}
+
+.festivals-gallery .flexbox-card {
+    text-align: left;
+}
+
+/*date tagging - event page*/
+
+.festivals-gallery .tags {
+    background-color:#65112680;
+    color: #37232A;
+    padding: 5px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*section - link to brunei tourism*/
+
+.confirmed-event {
+    background-color: #FFFCF7;
+    text-align: center;
+    padding: 50px;
+}
+
+/*contact page*/
+.ContactUs {
+       padding: 50px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(45, 7, 20, 0.90) 0%,
+            rgba(65, 12, 29, 0.65) 45%,
+            rgba(65, 12, 29, 0.10) 100%
+        ),
+        url("images/soas\ banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+}
+/*enquiry section*/
+
+.enquiry h1 {
+    color: #651126;
+}
+
+.enquiry {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.contact-form {
+    flex: 1;
+}
+
+.location {
+    flex: 1;
+}
+
+/*form*/
+.contact-form {
+    padding: 50px;
+}
+
+.enquiry label {
+    color: #37232A;
+    font-weight: bold;
+}
+
+.enquiry input,
+.enquiry select,
+.enquiry textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #FFFCF7;
+    color: #37232A;
+    border: 1px solid #E8D3BF;
+    border-radius: 15px;
+}
+
+.enquiry textarea {
+    height: 150px;
+}
+
+.enquiry input::placeholder,
+.enquiry textarea::placeholder {
+    color: #705D61;
+}
+
+.enquiry input:focus,
+.enquiry select:focus,
+.enquiry textarea:focus {
+    outline: none;
+    border-color: #A65D67;
+    box-shadow: 0 0 0 3px #a5475525;
+}
+
+.location {
+    padding: 50px;
+}
+
+.location iframe {
+    width: 100%;
+    height: 350px;
+}
+
+
+/* Brunei SVG Map */
+.district-map svg {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+#features path {
+    stroke: white;
+    stroke-width: 2;
+    cursor: pointer;
+
+}
+
+#BNBM {
+    fill: #651126;
+}
+
+#BNTU {
+    fill: #A54755;
+}
+
+#BNBE {
+    fill: #C77D87;
+}
+
+#BNTE {
+    fill: #8D3049;
+}
+
+#features a:hover path {
+    fill: #E8B6BE;
+}
+
+.grid-card i {
+    font-size: 30px;
+    color: #651126;
+}
+
+/*hidden nav hbgr button*/
+
+#menu-toggle {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#menu-toggle:focus-visible + .hamburger {
+    outline: 2px solid white;
+    outline-offset: 5px;
+}
+
+/*responsiveness*/
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #390B19;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    z-index: 1001;
+}
+
+#menu-toggle:checked ~ .main-nav {
+    display: flex;
+}
+
+.main-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    border-bottom: 1px solid #ffffff30;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background-color: #651126;
+}
+
+  .DiscoverBrunei, .Attractions, .Plan-Your-Visit,
+    .Events-Celebrations, .ContactUs {
+        padding: 55px 20px;
+    }
+
+    .gridbox-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        margin: 15px 0;
+    }
+
+    .grid-box {
+        padding: 20px;
+    }
+
+    .about-brunei {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about-brunei img {
+        grid-column: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .caption {
+        padding: 10px;
+    }
+
+    .district-map svg {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    /*seven puak*/
+    .seven-puak {
+        padding: 20px 10px;
+    }
+
+    .tab button {
+        flex: 0 0 auto;
+    }
+
+    .tabcontent {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        min-height: 0;
+    }
+
+    .tabcontent img {
+        flex: none;
+        width: 100%;
+        height: 250px;
+    }
+
+        /*attractions filters*/
+    #myBtnContainer {
+        gap: 5px;
+    }
+
+    .filterBtn {
+        padding: 10px 10px;
+    }
+
+    .before-container {
+        flex-direction: column;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+
+    .before-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .before-card img {
+        height: 230px;
+    }
+
+    .before-caption {
+        padding: 20px;
+    }
+
+    .accommodation {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .accommodation img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .accommodation .before-caption {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .best-time {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .best-text,
+    .best-img {
+        width: 100%;
+    }
+
+    .best-img img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .enquiry {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-form,
+    .location {
+        width: 100%;
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+
+    .enquiry input,
+    .enquiry select,
+    .enquiry textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .location iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

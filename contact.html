@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Brunei</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Discover Brunei<small>A KINGDOM OF WONDERS</small></p>
+        
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+        
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">Discover Brunei</a>
+            <a href="attraction.html">Attractions</a>
+            <a href="plan.html">Plan Your Visit</a>
+            <a href="event.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="ContactUs">
+            <h1>Contact Us</h1>
+            <p>Questions about your visit? Get in touch or explore official information sources.</p>
+        </section>
+
+        <section class="enquiry">
+            <div class="contact-form">
+            <p><small>SEND AN ENQUIRY</small></p>
+            <h1>We’d Love to Hear from You</h1>
+            
+            <form action="submit.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    
+                <label for="inquiry">What's your inquiry about?</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="Travel Information">Travel Information</option>
+                    <option value="Events & Fstivals">Events & Festivals</option>
+                    <option value="Tourist Attractions">Tourist Attractions</option>
+                    <option value="Other Inquiries">Other Inquiries</option>
+                </select>
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+ 
+                <button class="btn" type="submit">Send Message →</button>
+            </form>
+            </div>
+
+            <div class="location">
+                <p><small>FIND US</small></p>
+                <h1>Our Location</h1>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.5283081808366!2d114.9414693742858!3d4.9191872950567666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3222f51ebf1fda1f%3A0x340a37b8029f929d!2sMinistry%20of%20Primary%20Resources%20%26%20Tourism!5e1!3m2!1sen!2sbn!4v1793430726831!5m2!1sen!2sbn" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                <h2>Tourism Development Department</h2>
+                <p><i class="fi fi-ss-map-pin"></i>  Ministry of Primary Resources and Tourism, Jalan Menteri Besar</p>
+                <p><i class="fi fi-sr-clip-mail"></i>  info@tourism.gov.bn</p>
+                <p><i class="fi fi-sr-phone-call"></i>  (673) 2380022</p>
+            </div> 
+        </section>
+
+    </main>
+    <footer>
+        <p>Discover Brunei<small>A KINGDOM OF WONDERS</small></p>
+        <p>Explore Brunei's natural beauty, culture, heritage and warm hospitality</p>
+        <h2>Explore</h2>
+        <a href="about.html">Discover Brunei</a>
+        <a href="attraction.html">Attractions</a>
+        <a href="plan.html">Travel Information</a>
+        <br>
+        <h2>More</h2>
+        <a href="event.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://www.bruneitourism.com/">Official Tourism Website↗</a>
+
+        <hr>
+
+        <p class="copyright">&copy;2026 Discover Brunei . Personal website project . Created by Syahirah</p>
+    </footer>
+</body>
+</html>
