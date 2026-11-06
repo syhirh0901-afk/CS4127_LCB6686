@@ -338,9 +338,9 @@ footer hr {
     color: #705D61;
 }
 
-/map*/
+/*map*/
 
-.district-map {
+section.district-map {
     text-align: center;
 }
 
