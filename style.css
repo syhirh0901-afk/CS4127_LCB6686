@@ -340,8 +340,26 @@ footer hr {
 
 /*map*/
 
-section.district-map {
+/* District Map */
+.district-map {
     text-align: center;
+    padding: 40px 20px;
+}
+
+.district-map h1,
+.district-map h2,
+.district-map p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.district-map svg {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 
 /*traditional food*/
